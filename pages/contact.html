@@ -1,0 +1,149 @@
+ <div class="container marketing">
+  <h2 style="padding-top:35px;">{{'contact_header' | translate}}</h2>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+            <p>{{'contact_1' | translate}}</p>
+			<p>{{'contact_2' | translate}}<a href="mailto:provyrepartion@gmail.com?Subject=Provy" target="_top">{{'contact_3' | translate}}</a></p>
+			<p>{{'contact_5' | translate}}</p>
+			<ul>
+				<li>{{'contact_6' | translate}}</li>
+				<li>{{'contact_7' | translate}}</li>
+				<li>{{'contact_8' | translate}}</li>
+				<li>{{'contact_9' | translate}}</li>
+			</ul>
+			</div>
+        </div>
+		
+		<p>{{'contact_13' | translate}}</p>
+
+  <div class="checkbox">
+  <p>{{'services_para_8' | translate}}</p>
+  <label>
+    <input type="checkbox" value="{{'services_para_1' | translate}}">
+    {{'services_para_1' | translate}}
+  </label>
+  </div>
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" value="{{'services_para_2' | translate}}">
+    {{'services_para_2' | translate}}
+  </label>
+  </div>
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" value="{{'services_para_3' | translate}}">
+    {{'services_para_3' | translate}}
+  </label>
+  </div>
+    <div class="checkbox">
+  <label>
+    <input type="checkbox" value="{{'services_para_5' | translate}}">
+    {{'services_para_5' | translate}}
+  </label>
+  </div>
+  <div class="checkbox">
+  <p>{{'services_para_4' | translate}}</p>
+  <label>
+    <input type="checkbox" value="{{'services_para_4_1' | translate}}">
+    {{'services_para_4_1' | translate}}
+  </label>
+  </div>
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" value="{{'services_para_4_3' | translate}}">
+    {{'services_para_4_3' | translate}}
+  </label>
+  </div>
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" value="{{'services_para_4_4' | translate}}">
+    {{'services_para_4_4' | translate}}
+  </label>
+  </div>
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" value="{{'services_para_4_5' | translate}}">
+    {{'services_para_4_5' | translate}}
+  </label>
+  </div>
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" value="{{'services_para_4_6' | translate}}">
+    {{'services_para_4_6' | translate}}
+  </label>
+  </div>
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" value="{{'services_para_4_7' | translate}}">
+    {{'services_para_4_7' | translate}}
+  </label>
+  </div>
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" value="{{'services_para_4_8' | translate}}">
+    {{'services_para_4_8' | translate}}
+  </label>
+  </div>
+  <div class="checkbox">
+  <p>{{'services_para_6' | translate}}</p>
+  <label>
+    <input type="checkbox" value="{{'services_para_6_1' | translate}}">
+	{{'services_para_6_1' | translate}}
+	</label>
+  </div>
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" value="{{'services_para_6_2' | translate}}">
+    {{'services_para_6_2' | translate}}
+	</label>
+	</div>
+	<div class="checkbox">
+  <label>
+    <input type="checkbox" value="{{'services_para_6_3' | translate}}">
+    {{'services_para_6_3' | translate}}
+  </label>
+  </div>
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" value="{{'services_para_6_4' | translate}}">
+    {{'services_para_6_4' | translate}}
+  </label>
+  </div>
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" value="{{'services_para_6_5' | translate}}">
+    {{'services_para_6_5' | translate}}
+  </label>
+  </div>
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" value="{{'services_para_6_6' | translate}}">
+    {{'services_para_6_6' | translate}}
+  </label>
+  </div>
+  <div class="checkbox">
+  <label>
+    <input type="checkbox" value="{{'services_para_7' | translate}}">
+    {{'services_para_7' | translate}}
+  </label>
+</div>
+<textarea id="message" class="form-control" rows="3">{{'contact_txt' | translate}}</textarea>
+		
+</div>
+<script>
+function text() {
+    var text = "";
+    $('input[type=checkbox]:checked').each( function() {
+        text += $(this).val() + " ";
+    });
+    $('input[type=text]').each( function() {
+        text += $(this).val() + " ";
+    });
+    $('#message').val(text);
+}
+
+$('input[type=checkbox]').change(function () {
+    text();
+});
+</script>
